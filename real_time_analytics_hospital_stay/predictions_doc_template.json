@@ -1,0 +1,23 @@
+{
+    "date": "$date",
+    "predictedDischarges": {
+        "$natural": {
+            "min": 10,
+            "max": 80
+        }
+    },
+    "confidenceInterval": {
+        "lower": {
+            "$natural": {
+                "min": 5,
+                "max": 60
+            }
+        },
+        "upper": {
+            "$natural": {
+                "min": 15,
+                "max": 100
+            }
+        }
+    }
+}

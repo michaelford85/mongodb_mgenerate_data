@@ -1,0 +1,25 @@
+{
+    "patientId": "$guid",
+    "admissionDate": {
+        "$date": {
+            "min": "2025-07-01T00:00:00Z",
+            "max": "2025-07-15T00:00:00Z"
+        }
+    },
+    "dischargeDate": {
+        "$date": {
+            "min": "2025-07-16T00:00:00Z",
+            "max": "2025-07-30T00:00:00Z"
+        }
+    },
+    "unit": {
+        "$choose": {
+            "from": ["ICU", "Med-Surg", "Cardiology", "Oncology", "ER"]
+        }
+    },
+    "entryPoint": {
+        "$choose": {
+            "from": ["ER", "Scheduled Surgery", "Transfer"]
+        }
+    }
+}

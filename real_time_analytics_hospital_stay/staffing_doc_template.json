@@ -1,0 +1,19 @@
+{
+    "unit": {
+        "$choose": {
+            "from": ["ICU", "Med-Surg", "Cardiology", "Oncology", "ER"]
+        }
+    },
+    "shift": {
+        "$choose": {
+            "from": ["Day", "Evening", "Night"]
+        }
+    },
+    "staffCount": {
+        "$natural": {
+            "min": 3,
+            "max": 25
+        }
+    },
+    "timestamp": "$date"
+}
