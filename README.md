@@ -1,6 +1,6 @@
 # MongoDB mgenerate data
 
-This repository uses `mgeneratejs` to generate structured, semi-random JSON data according to a template object.
+This repository uses [`mgeneratejs`](https://github.com/rueckstiess/mgeneratejs) to generate structured, semi-random JSON data according to a template object.
 
 ## Example
 
