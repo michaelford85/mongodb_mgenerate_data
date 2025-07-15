@@ -2,13 +2,13 @@
 
 ## Template Files
 
-### stays_doc_template.json
+### [stays_doc_template.json](./stays_doc_template.json)
 - Hospital stay data
 
-### staffing_doc_template.json
+### [staffing_doc_template.json](./staffing_doc_template.json)
 - Staffing snapshot data
 
-### predictions_doc_template.json
+### [predictions_doc_template.json](./predictions_doc_template.json)
 - Forecast data for discharges
 
 ## Database Hierarchy
