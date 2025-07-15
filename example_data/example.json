@@ -1,0 +1,10 @@
+{
+    "name": "$name",
+    "age": "$age",
+    "emails": {
+        "$array": {
+            "of": "$email",
+            "number": 3
+        }
+    }
+}
