@@ -44,3 +44,6 @@ mongoimport \
   --file data.json \
   --type json
 ```
+
+## Data Templates
+- [Real Time Analytics Hospital Data](./real_time_analytics_hospital_stay/README.md)
