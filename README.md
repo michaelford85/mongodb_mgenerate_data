@@ -45,5 +45,13 @@ mongoimport \
   --type json
 ```
 
+mongoimport \
+  --uri "mongodb+srv://mford-study-cluster.1ccqae.mongodb.net/hospital_ops_db" \
+  --username "mford-study-cluster-admin" \
+  --password "jdhytehwk" \
+  --collection stays \
+  --file stays.json \
+  --type json
+
 ## Data Templates
 - [Real Time Analytics Hospital Data](./real_time_analytics_hospital_stay/README.md)
