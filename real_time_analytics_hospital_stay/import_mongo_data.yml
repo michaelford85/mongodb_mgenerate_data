@@ -1,0 +1,27 @@
+---
+- name: Import MongoDB datasets into Atlas
+  hosts: localhost
+  gather_facts: no
+  vars:
+    mongo_uri: "mongodb+srv://{{ cluster_name }}.xxxxxx.mongodb.net/hospital_ops_db"
+    mongo_user: "{{ database_username }}"
+    mongo_pass: "{{ database_password }}"
+    mongo_type: "json"
+    files:
+      - { name: "stays", file: "stays.json" }
+      - { name: "staffing", file: "staffing.json" }
+      - { name: "predictions", file: "predictions.json" }
+
+  tasks:
+    - name: Import each collection using mongoimport
+      ansible.builtin.shell: |
+        mongoimport \
+          --uri "{{ mongo_uri }}" \
+          --username "{{ mongo_user }}" \
+          --password "{{ mongo_pass }}" \
+          --collection {{ item.name }} \
+          --file {{ item.file }} \
+          --type {{ mongo_type }}
+      loop: "{{ files }}"
+      args:
+        executable: /bin/bash
