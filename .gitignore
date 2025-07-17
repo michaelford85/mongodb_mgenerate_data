@@ -4,3 +4,4 @@
 ./real_time_analytics_hospital_stay/stays.json
 ./real_time_analytics_hospital_stay/staffing.json
 ./real_time_analytics_hospital_stay/predictions.json
+./real_time_analytics_hospital_stay/secrets.json
