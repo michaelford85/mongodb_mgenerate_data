@@ -3,12 +3,12 @@
   hosts: localhost
   gather_facts: no
   vars:
-    mongo_uri: "mongodb+srv://{{ cluster_name }}.xxxxxx.mongodb.net/hospital_ops_db"
+    mongo_uri: "mongodb+srv://{{ cluster_url_prefix }}.mongodb.net/hospital_ops_db"
     mongo_user: "{{ database_username }}"
     mongo_pass: "{{ database_password }}"
     mongo_type: "json"
     files:
-      - { name: "stays", file: "stays.json" }
+      - { name: "stays", file: "stays_flat.json" }
       - { name: "staffing", file: "staffing.json" }
       - { name: "predictions", file: "predictions.json" }
 

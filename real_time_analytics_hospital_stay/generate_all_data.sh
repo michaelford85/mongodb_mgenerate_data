@@ -15,4 +15,7 @@ mgeneratejs "$(jq -c . staffing_doc_template.json)" -n 500 > staffing.json
 echo "Adding dischargeDate to stays..."
 ./discharge_jq_command.sh
 
+echo "Flattening stays data..."
+jq -c '.[]' stays_unflattened.json > stays.json
+
 echo "✅ All data generated successfully."

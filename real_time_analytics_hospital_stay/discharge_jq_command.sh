@@ -26,4 +26,4 @@ jq 'map({
   diagnosis: .diagnosis,
   procedures: .procedures,
   attendingPhysician: .attendingPhysician
-})' stays_90days.json > stays.json
+})' stays_90days.json > stays_unflattened.json
