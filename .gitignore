@@ -1,0 +1,6 @@
+./real_time_analytics_hospital_stay/stays_raw.json
+./real_time_analytics_hospital_stay/stays_admit.json
+./real_time_analytics_hospital_stay/stays_90days.json
+./real_time_analytics_hospital_stay/stays.json
+./real_time_analytics_hospital_stay/staffing.json
+./real_time_analytics_hospital_stay/predictions.json

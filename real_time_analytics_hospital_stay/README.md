@@ -27,7 +27,7 @@ hospital_ops_db
 Use the following script to generate sample data:
 
 ```bash
-./generate_data.sh
+./generate_all_data.sh
 ```
 
 This script runs the following steps:
@@ -44,7 +44,7 @@ This script runs the following steps:
 To delete generated artifacts:
 
 ```bash
-./clean_generated_data.sh
+./cleanup_generated_data.sh
 ```
 
 This removes:
